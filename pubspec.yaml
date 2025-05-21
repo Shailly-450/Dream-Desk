@@ -56,3 +56,16 @@ flutter:
     - assets/json/
     - lib/core/services/
     - lib/core/services/helpers/
+
+# Fix for UnmodifiableUint8ListView issue
+dependency_overrides:
+  image_cropper_platform_interface:
+    git:
+      url: https://github.com/hnvn/flutter_image_cropper.git
+      path: image_cropper_platform_interface
+      ref: master
+  image_picker_platform_interface:
+    git:
+      url: https://github.com/flutter/packages.git
+      path: packages/image_picker/image_picker_platform_interface
+      ref: main
